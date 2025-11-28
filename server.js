@@ -5,6 +5,8 @@ const fs = require("fs");
 const axios = require("axios");
 const cron = require("node-cron");
 const moment = require("moment-timezone");
+const nodemailer = require("nodemailer");
+
 
 const seatbookjson ="public/data/seat.json";
 const url = "https://server.vizmo.in/vms/classes/DeskBooking";
@@ -177,13 +179,55 @@ cron.schedule("0 1 0 * * *", () => {
 }, {
     timezone: "Asia/Kolkata"
 });
-
-
-
 // cron.schedule("* * * * *", () => {
 //     console.log("⏰ Running every 1 minute:", new Date().toLocaleString());
 //     sendBookings();
 // });
+
+
+
+async function sendMail() {
+  try {
+    // Create reusable SMTP connection
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: "neeraj.login@gmail.com",
+        pass: "nozn nwrj skbj gviw" // NOT normal password
+      }
+    });
+
+    // Email details
+    const mailOptions = {
+      from: "neeraj.login@gmail.com",
+      to: "neeraj.login@gmail.com",
+      subject: "Test Email from Node.js",
+      text: "Hello! This is a test message.",
+      html: "<h3>Hello!</h3><p>This is a <b>test email</b>.</p>"
+    };
+
+    // Send mail
+    const info = await transporter.sendMail(mailOptions);
+    
+    console.log("✔ Email sent:", info.response);
+
+  } catch (error) {
+    console.log("❌ Error sending email:", error);
+  }
+}
+
+cron.schedule("*/5 * * * *", () => {
+    console.log("📩 Sending mail every 5 minutes...");
+    sendMail();
+});
+
+
+cron.schedule("*/30 * * * *", () => {
+    console.log("📩 Sending mail every 30 minutes...");
+    sendMail();
+}, {
+    timezone: "Asia/Kolkata"
+});
 
 
 app.listen(port, () => {
