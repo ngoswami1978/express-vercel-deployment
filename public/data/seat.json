@@ -1,0 +1,196 @@
+[ 
+{
+  "assignedTo": {
+    "pointer": {
+      "__type": "Pointer",
+      "className": "Employee",
+      "objectId": "1YQt8Opzyo3FVnJByHFa"
+    },
+    "name": "Abrar Ali",
+    "email": "abrar.ali@motherson.com",
+    "phone": "+918130512100"
+  },
+  
+  "desk": {
+    "name": "02F-012",
+    "pointer": {
+      "__type": "Pointer",
+      "className": "Desk",
+      "objectId": "o4X3QJz7Kl13y9cgl6jw"
+    },
+    "floor": "Old Building Second Floor"
+  },
+  "createdBy": {
+    "pointer": {
+      "__type": "Pointer",
+      "className": "_User",
+      "objectId": "JYXOWUECUY1MxRLmzgpP"
+    },
+    "name": "Abrar Ali",
+    "email": "abrar.ali@motherson.com"
+  },
+  "recurrence": {
+    "pattern": {
+      "type": "day",
+      "interval": 1
+    },
+    "range": {
+      "type": "numbered",
+      "startDate": {
+        "__type": "Date",
+        "iso": "2025-11-28T01:30:00.000Z"
+      },
+      "numberOfOccurrences": 1,
+      "endDate": null
+    }
+  },
+  "duration": 36000000,
+  "company": {
+    "__type": "Pointer",
+    "className": "Company",
+    "objectId": "ulebyVjJc8pmDA5hRGf9"
+  },
+  "location": {
+    "__type": "Pointer",
+    "className": "Location",
+    "objectId": "DYz4X32VMbdNEBv0Pj7m"
+  },
+  "_ApplicationId": "kKf4XxPx8SyIEHPLozWfCIop6NiwdnlI",
+  "_JavaScriptKey": "ak7sfBa8TSutbD0aoYy51ILBrIB8l8mf",
+  "_ClientVersion": "js6.1.1-1",
+  "_InstallationId": "46109749-cff8-4a8d-b4d3-9960bbd3a9e7",
+  "_SessionToken": "r:4a36868de5919d66e56ba57d39f49ce9"
+}
+,
+    
+{
+  "assignedTo": {
+    "pointer": {
+      "__type": "Pointer",
+      "className": "Employee",
+      "objectId": "cFDlAHR9WmxqgxRZhKsB"
+    },
+    "name": "Neeraj Goswami",
+    "email": "neeraj.goswami@motherson.com",
+    "phone": "+919899846293"
+  },
+  "desk": {
+    "name": "02F-011",
+    "pointer": {
+      "__type": "Pointer",
+      "className": "Desk",
+      "objectId": "XsCiF3ifyOI27lixhb37"
+    },
+    "floor": "Old Building Second Floor"
+  },
+  "createdBy": {
+    "pointer": {
+      "__type": "Pointer",
+      "className": "_User",
+      "objectId": "coQ1VsQ1in7Q23x3HIes"
+    },
+    "name": "Neeraj Goswami",
+    "email": "neeraj.goswami@motherson.com"
+  },
+  "recurrence": {
+    "pattern": {
+      "type": "day",
+      "interval": 1
+    },
+    "range": {
+      "type": "numbered",
+      "startDate": {
+        "__type": "Date",
+        "iso": "2025-11-28T01:30:00.000Z"
+      },
+      "numberOfOccurrences": 1,
+      "endDate": null
+    }
+  },
+  "duration": 36000000,
+  "company": {
+    "__type": "Pointer",
+    "className": "Company",
+    "objectId": "ulebyVjJc8pmDA5hRGf9"
+  },
+  "location": {
+    "__type": "Pointer",
+    "className": "Location",
+    "objectId": "DYz4X32VMbdNEBv0Pj7m"
+  },
+  "_ApplicationId": "kKf4XxPx8SyIEHPLozWfCIop6NiwdnlI",
+  "_JavaScriptKey": "ak7sfBa8TSutbD0aoYy51ILBrIB8l8mf",
+  "_ClientVersion": "js6.1.1-1",
+  "_InstallationId": "d01a040c-bc7f-4691-961f-6b1cec729612",
+  "_SessionToken": "r:1d012613d73a391defdbcd32432c3287"
+}
+,
+{
+  "assignedTo": {
+    "pointer": {
+      "__type": "Pointer",
+      "className": "Employee",
+      "objectId": "4FaxgUeoKlKGIn4ffxXZ"
+    },
+    "name": "Anmoldeep Singh",
+    "email": "anmoldeep.singh@motherson.com",
+    "phone": "+919877293713"
+  },
+ 
+  "desk": {
+    "name": "02F-009",
+    "pointer": {
+      "__type": "Pointer",
+      "className": "Desk",
+      "objectId": "ag2JJ1XHyyiRTo9RZufg"
+    },
+    "floor": "Old Building Second Floor"
+  },
+ 
+  "createdBy": {
+    "pointer": {
+      "__type": "Pointer",
+      "className": "_User",
+      "objectId": "3O95sSzmZaETQSecK9FK"
+    },
+    "name": "Anmoldeep Singh",
+    "email": "anmoldeep.singh@motherson.com"
+  },
+ 
+  "recurrence": {
+    "pattern": {
+      "type": "day",
+      "interval": 1
+    },
+    "range": {
+      "type": "numbered",
+      "startDate": {
+        "__type": "Date",
+        "iso": "2025-11-28T01:30:00.000Z"
+      },
+      "numberOfOccurrences": 1,
+      "endDate": null
+    }
+  },
+ 
+  "duration": 36000000,
+ 
+  "company": {
+    "__type": "Pointer",
+    "className": "Company",
+    "objectId": "ulebyVjJc8pmDA5hRGf9"
+  },
+ 
+  "location": {
+    "__type": "Pointer",
+    "className": "Location",
+    "objectId": "DYz4X32VMbdNEBv0Pj7m"
+  },
+ 
+  "_ApplicationId": "kKf4XxPx8SyIEHPLozWfCIop6NiwdnlI",
+  "_JavaScriptKey": "ak7sfBa8TSutbD0aoYy51ILBrIB8l8mf",
+  "_ClientVersion": "js6.1.1-1",
+  "_InstallationId": "64f89663-4b62-428d-84cb-27515e8233eb",
+  "_SessionToken": "r:264fe6b6db868736b850c18225127a6c"
+}
+]
