@@ -23,7 +23,7 @@ app.use(express.static("public"));
 const port = process.env.PORT || 8080;
 
 app.get("/", (req, res) => {
-  res.send("Subscribe to Arpan Neupane's channel");
+  res.send("Subscribe to My channel Vista");
 });
 
 
