@@ -25,7 +25,7 @@ app.use(express.static("public"));
 const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send("Subscribe to My channel Vista by NG");
+  res.send("Subscribe to My channel Vista by NG..");
   console.log("⏰ Task executed at Subscribe to My channel Vista:", new Date().toLocaleString());
 });
 
@@ -240,6 +240,23 @@ function runTask() {
 setInterval(runTask, 10000);
 
 
-app.listen(port, () => {
-  `Server started on port ${port}`;
-});
+
+
+// app.listen(port, () => {
+//   `Server started on port ${port}`;
+// });
+
+module.exports = app;
+
+// // Also Replace This:
+
+// // Replace:
+
+// // app.listen(port, () => {
+// //   `Server started on port ${port}`;
+// // });
+
+
+// // with:
+
+// // module.exports = app;
