@@ -6,8 +6,5 @@
       "src": "/(.*)",
       "dest": "server.js"
     }
-  ],
-  "features": {
-    "live": false
-  }
+  ]
 }
