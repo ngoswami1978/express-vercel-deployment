@@ -7,7 +7,6 @@ const cron = require("node-cron");
 const moment = require("moment-timezone");
 const nodemailer = require("nodemailer");
 
-
 const seatbookjson ="public/data/seat.json";
 const url = "https://server.vizmo.in/vms/classes/DeskBooking";
 
@@ -24,9 +23,12 @@ app.use(express.static("public"));
 
 const port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("Subscribe to My channel Vista by NG..");
+app.get("/", async (req, res) => {
+
+  console.log("🔥 Route '/' hit at:", new Date().toLocaleString());    
+  res.send("Subscribe to My channel Vista by NG...");
   console.log("⏰ Task executed at Subscribe to My channel Vista:", new Date().toLocaleString());
+  
 });
 
 
