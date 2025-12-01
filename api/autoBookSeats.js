@@ -1,9 +1,14 @@
-// api/autoBookSeats.js
-//import moment from "moment-timezone";
-//import sendBookings from "../lib/sendBookings.js"; // your logic file
+import moment from "moment-timezone";
 
-export default async function autoBookSeatsHandler(req, res) {
-  console.log("🔥 Auto booking triggered at");
-  //await sendBookings();
-  res.status(200).json({ success: true });
+export default async function handler(req, res) {
+  console.log("🔥 Auto booking triggered at:", moment().tz("Asia/Kolkata").format());
+
+  // Call your main booking function here
+  // await sendBookings();
+
+  res.status(200).json({
+    success: true,
+    message: "Booking triggered successfully",
+    time: moment().tz("Asia/Kolkata").format(),
+  });
 }
