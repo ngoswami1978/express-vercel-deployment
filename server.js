@@ -270,8 +270,8 @@ cron.schedule("*/30 * * * *", () => {
 //   `Server started on port ${port}`;
 // });
 
-//module.exports = app;
+module.exports = app;
 
-app.listen(port, () => {
-  `Server started on port ${port}`;
-});
+// app.listen(port, () => {
+//   `Server started on port ${port}`;
+// });
