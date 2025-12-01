@@ -26,6 +26,7 @@ const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.send("Subscribe to My channel Vista");
+  console.log("⏰ Task executed at Subscribe to My channel Vista:", new Date().toLocaleString());
 });
 
 
