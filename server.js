@@ -25,7 +25,7 @@ app.use(express.static("public"));
 const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send("Subscribe to My channel Vista");
+  res.send("Subscribe to My channel Vista by NG");
   console.log("⏰ Task executed at Subscribe to My channel Vista:", new Date().toLocaleString());
 });
 
