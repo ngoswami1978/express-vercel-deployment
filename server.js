@@ -22,7 +22,7 @@ app.set("view engine", "ejs");
 //render css files
 app.use(express.static("public"));
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.send("Subscribe to My channel Vista");
@@ -185,7 +185,7 @@ cron.schedule("0 1 0 * * *", () => {
 // });
 
 
-
+//Send Mail to Users
 async function sendMail() {
   try {
     // Create reusable SMTP connection
@@ -228,6 +228,15 @@ cron.schedule("*/30 * * * *", () => {
 }, {
     timezone: "Asia/Kolkata"
 });
+
+
+// Task to run repeatedly
+function runTask() {
+    console.log("⏰ Task executed at:", new Date().toLocaleString());
+}
+
+// Run every 10 seconds
+setInterval(runTask, 10000);
 
 
 app.listen(port, () => {
